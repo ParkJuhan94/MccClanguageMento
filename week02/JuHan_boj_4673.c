@@ -4,7 +4,8 @@ void self_num() {
 	int not_self_num;
 	int arr[10100] = { 0 };		// stack 범위 초과를 생각하여 100 여유롭게 할당
 
-	for (int i = 1; i <= 10000; i++) {        //자릿수를 나눠서 셀프넘버가 아닌 놈의 인덱스는 ++해줌
+	//자릿수를 나눠서 셀프넘버가 아닌 놈의 인덱스는 ++해줌
+	for (int i = 1; i <= 10000; i++) {        
 		if ( i < 10) {
 			not_self_num = i + i;
 			arr[not_self_num]++;
