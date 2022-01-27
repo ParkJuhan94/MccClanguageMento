@@ -1,33 +1,26 @@
-#include<stdio.h>
-int main(void)
+#include <stdio.h>
+int main()
 {
+	int H, M;
+	scanf("%d %d", &H, &M);
 
-    //노트북 수=X    
-    //총 비용=A+B*X
-    //총 수입=C*X
-    //A=고정비용
-    //B=가변비용
+	if(M>=45)
+    {M = M - 45;}
+	else if (M < 45)
+	{
+		if (H == 0)
+		{
+			H = 23;
+			M = M + 15;
+		}
+		else
+		{
+			H = H - 1;
+			M = M + 15;
+		}
+	}
 
-    unsigned long A, B, C;
-    scanf("%ld %ld %ld", &A, &B, &C);
-    int X = 0;
+	printf("%d %d", H, M);
 
-
-    if (B >= C)
-    {
-        printf("-1");
-    }
-    else
-    { 
-
-        X = A / (C - B) + 1;
-        printf("%d", X);
-    }
-
-
-
-
-    return 0;
+	return 0;
 }
-
-
