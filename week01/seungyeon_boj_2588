@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+	int x,y,a,b,c;
+	scanf("%d %d", &y, &x);
+	
+
+	a = x % 10; //5
+	x=x / 10; //38
+	b = x % 10; //8
+	c = x / 10; //3
+
+	int three, four, five, six;
+
+	three = a * y;
+	four = b * y;
+	five = c * y;
+	six = three + (four * 10) + (five * 100);
+
+	printf("%d\n", three);
+    printf("%d\n", four);
+    printf("%d\n", five);
+    printf("%d\n", six);
+
+
+
+	return 0;
+
+}
