@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+
+
+
+    int A, B, C;
+    scanf_s("%d%d%d", &A, &B, &C);
+    int X = 0;
+
+    if (B > C)
+    {
+        printf("-1");
+    }
+    else {
+        while (1)
+        {
+            X++;
+
+            if (A + B * X < C * X)
+                break;
+
+        }
+
+        printf("%d", X);
+    }
+
+
+    return 0;
+}
+
