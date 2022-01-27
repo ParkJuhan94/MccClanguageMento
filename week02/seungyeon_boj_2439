@@ -1,0 +1,35 @@
+#include <stdio.h>
+int main()
+{
+	int i,j,N,u=0;
+
+	scanf("%d", &N);
+
+	for (i = 1; i <= N; i++)
+		
+	{
+		//u++;
+		for (j = 0; j < N - i; j++)//띄어쓰기
+		{
+			printf(" ");
+		}
+		for (j = 0; j < i; j++) //별 찍기
+		{
+			printf("*");
+
+		}
+		printf("\n");
+
+
+	}
+
+/*
+N-u번 띄어쓰기 ,  *u번
+N-2 번 띄어쓰기 ,  *2번
+N-3 번 띄어쓰기 ,  *3번
+N-4 번 띄어쓰기 ,  *4번
+N-5 번 띄어쓰기 ,  *5번
+*/
+
+	return 0;
+}
