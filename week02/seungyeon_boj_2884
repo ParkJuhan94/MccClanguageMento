@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main(void)
+{
+
+    //노트북 수=X    
+    //총 비용=A+B*X
+    //총 수입=C*X
+    //A=고정비용
+    //B=가변비용
+
+    unsigned long A, B, C;
+    scanf("%ld %ld %ld", &A, &B, &C);
+    int X = 0;
+
+
+    if (B >= C)
+    {
+        printf("-1");
+    }
+    else
+    { 
+
+        X = A / (C - B) + 1;
+        printf("%d", X);
+    }
+
+
+
+
+    return 0;
+}
+
+
