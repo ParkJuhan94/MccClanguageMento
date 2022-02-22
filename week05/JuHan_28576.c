@@ -36,7 +36,7 @@ void printStudent(Stu* p) {
 }
 
 int main() {
-    Stu* kim = 0;  // 포인터는 0으로 초기화한다.
+    Stu* kim = 0;  // 포인터는 0으로 초기화한다.!
 
     kim = getStudent();
 
